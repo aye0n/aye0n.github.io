@@ -1,0 +1,181 @@
+<!DOCTYPE html> <!--22161102 이아연-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>meenoi</title>
+    <style>
+      * { margin: 0; padding: 0; }
+      body {
+        width: 100%;
+        background-color: #d3d3d3;
+        background-attachment: fixed;
+        overflow-x: hidden;
+       }
+      header { margin: 0 auto; }
+      nav { text-align: center; }
+      li { list-style-type: none; }
+      a { text-decoration: none; }
+      /*샵샵샵*/
+      #logo {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          text-align: center;
+        }
+      #logo img {
+        width: 60px;
+      }
+      /*메인_gnb*/
+      #main_gnb {
+         clear: both;
+         width: 90%; margin: 0 auto;
+         border-top: 1px solid #ac36fe;
+         border-bottom: 1px solid #ac36fe;
+      }
+      #main_gnb > ul {
+        overflow: hidden;
+      }
+      #main_gnb > ul  li {
+        display: inline;
+        font-family: 'Scheherazade New', serif;
+        font-size: 18px;
+        padding: 10px 20px 10px 20px;
+        font-weight : 500;
+      }
+      #main_gnb > ul  li a {
+        color: #ac36fe;
+        transition: font-size 1.5s;
+      }
+      #main_gnb > ul  li a:hover {
+        color: #4F415B;
+        font-size: 22px;
+      }
+      /*섹션1*/
+      #contents {
+        width: 1000px;
+        height: 480px;
+        margin: 0 auto;
+      }
+      #sub_menu {
+        position: absolute;
+        width: 150px;
+        margin-top: 20px;
+        top: 50%;
+        left: 85%;
+      }
+      #sub_menu h3{
+        font-family: 'Pretendard';
+        font-size: 16px;
+        color: #ac36fe;
+        padding: 12px;
+        text-align: right;
+        border-bottom: solid 1px #ac36fe;
+      }
+      #sub_menu li {
+        font-size: 15px;
+        font-family: 'Pretendard';
+        text-align: right;
+        padding: 10px;
+        border-bottom: dotted 1px #ac36fe;
+      }
+      #sub_menu li a {
+        transition: font-size 1.5s;
+        color: #ac36fe;
+      }
+      #sub_menu li a:hover {
+        color: #ac36fe;
+        font-size: 20px;
+      }
+      #main_contents {
+        float: left;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+      #main_contents h3{
+        font-size: 22px;
+        padding-bottom: 8px;
+        border-bottom: solid 1px #cccccc;
+      }
+      #main_contents p {
+        font-size: 14px;
+        margin-top: 30px;
+        line-height: 180%
+      }
+      #main_contents .figure {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      #main_contents li {
+        padding: 5px;
+      }
+      footer {
+        width: 100%;
+        height: 50px;
+      }
+      #footer_box {
+        width: 90%;
+        margin: 0 auto;
+        height: 50px;
+        border-top: 1px solid #ac36fe;
+      }
+      #footer_box P {
+        margin-top: 10px;
+        text-align: center;
+        font-family: 'Scheherazade New', serif;
+        color: #ac36fe;
+      }
+      .clear {
+        clear: both;
+      }
+      .align-center1 {
+        margin: 0 auto;
+      }
+      .align-center2 {
+        text-align: center;
+      }
+      /*폰트*/
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&family=Scheherazade+New&display=swap');
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html"><img src="./img/logo.png"></a>
+      </div>
+      <nav id="main_gnb">
+        <ul>
+          <li><a href="sub01.html"><i>K</i>ING...</a></li>
+          <li><a href="sub02.html"><i>A</i>LBUM</a></li>
+          <li><a href="sub03.html"><i>V</i>IDEOS</a></li>
+          <li><a href="sub04.html"><i>G</i>OODS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="contents">
+      <nav id="sub_menu">
+        <h3>YOUTUBE</h3>
+        <ul>
+          <li><a href="sub03_03.html">YORIZORI</a></li>
+          <li><a href="sub03.html">MUSIC VIDEO</a></li>
+        </ul>
+      </nav>
+      <div id="main_contents">
+        <div class="figure">
+          <video width="960" height="540" autoplay controls loop>
+           <source src="img/mp42.mp4" type="video/mp4">
+           <source src="img/mp42.mp4" type="video/webm">
+           <source src="img/mp42.mp4" type="video/ogg">
+          </video>
+        </div>
+    </section>
+    <div class="clear"></div>
+
+    <footer>
+      <div id="footer_box">
+        <p>COPYRIGHT ⓒAYEON LEE ALL RIGHTS RESERVED</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" />
+    <title>meenoi</title>
+    <style>
+      * { margin: 0; padding: 0; }
+      body {
+        width: 100%;
+        background-color: #d3d3d3;
+        background-attachment: fixed;
+        overflow-x: hidden;
+       }
+      header { margin: 0 auto; }
+      nav { text-align: center; }
+      li { list-style-type: none; }
+      a { text-decoration: none; }
+      /*샵샵샵*/
+      #logo {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          text-align: center;
+        }
+      #logo img {
+        width: 60px;
+      }
+      /*메인_gnb*/
+      #main_gnb {
+         clear: both;
+         width: 90%; margin: 0 auto;
+         border-top: 1px solid #ac36fe;
+         border-bottom: 1px solid #ac36fe;
+      }
+      #main_gnb > ul {
+        overflow: hidden;
+      }
+      #main_gnb > ul  li {
+        display: inline;
+        font-family: 'Scheherazade New', serif;
+        font-size: 18px;
+        padding: 10px 20px 10px 20px;
+        font-weight : 500;
+      }
+      #main_gnb > ul  li a {
+        color: #ac36fe;
+        transition: font-size 1.5s;
+      }
+      #main_gnb > ul  li a:hover {
+        color: #4F415B;
+        font-size: 22px;
+      }
+
+      /*푸터*/
+      footer {
+        width: 100%;
+        height: 50px;
+      }
+      #footer_box {
+        width: 90%;
+        margin: 0 auto;
+        height: 50px;
+        border-top: 1px solid #ac36fe;
+      }
+      #footer_box P {
+        margin-top: 10px;
+        text-align: center;
+        font-family: 'Scheherazade New', serif;
+        color: #ac36fe;
+      }
+      /*etc*/
+      .clear {
+        clear: both;
+      }
+      #contents {
+        color: #4F415B;
+        width: 1140px;
+        height: 480px;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .text > p {
+        font-size: 14px;
+        line-height: 20px;
+        font-family: 'Pretendard Regular';
+        line-height: 180%
+      }
+      .text > h1 {
+        margin-bottom: 15px;
+        font-family: 'Pretendard Black';
+        font-size: 40px;
+        color: #ac36fe;
+      }
+      .img {
+        margin-left: 200px;
+        float: left;
+      }
+      .text {
+        margin-top: 100px;
+        margin-left: 50px;
+        float: left;
+      }
+      .font {
+        font-family: 'Scheherazade New', serif;
+        color: #ac36fe;
+      }
+      h5 {
+        filter: blur(0.8px);
+        font-size: 14px;
+        font-weight: 700;
+      }
+      h5:hover{
+        filter: blur(0);
+      }
+      .p1 {
+        color: #ac36fe;
+        border-bottom: solid 1px #ac36fe;
+        margin-bottom: 30px;
+      }
+      /*폰트*/
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&family=Scheherazade+New&display=swap');
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html"><img src="./img/logo.png"></a>
+      </div>
+      <nav id="main_gnb">
+        <ul>
+          <li><a href="sub01.html"><i>K</i>ING...</a></li>
+          <li><a href="sub02.html"><i>A</i>LBUM</a></li>
+          <li><a href="sub03.html"><i>V</i>IDEOS</a></li>
+          <li><a href="sub04.html"><i>G</i>OODS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="contents">
+        <img class="img "src="img/k1.jpg" onmouseover="this.src='img/k2.jpg'" onmouseout="this.src='img/k1.jpg'" width="380px">
+
+        <div class="text">
+
+          <h5 class="font">“ <i>K</i>ING... is meenoi ”</h5>
+          <h1>meenoi</h1>
+
+          <p class='p1'>대한민국의 8BallTown 소속 싱어송라이터</p>
+
+          <p>특유의 ‘킹받는’ 이미지로 사람들에게 관심을 받고 있으며
+          <br>대표적으론 <우리집 고양이 츄르를 좋아해>, 'ㄱㄴ 댄스'가 있다.
+          <br>가수로서는 평소 캐릭터와 달리 특유의 보이스 컬러가 돋보이면서
+          <br>안정적인 보컬 실력까지 놓치지 않는 실력파 싱어송라이터이다.</p>
+        </div>
+
+    </div>
+
+      <div class="clear"></div>
+
+      <footer>
+        <div id="footer_box">
+          <p>COPYRIGHT ⓒAYEON LEE ALL RIGHTS RESERVED</p>
+        </div>
+      </footer>
+  </body>
+</html>

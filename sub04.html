@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>meenoi</title>
+    <style>
+      * { margin: 0; padding: 0; }
+      body {
+        width: 100%;
+        background-color: #d3d3d3;
+        background-attachment: fixed;
+        overflow-x: hidden;
+       }
+      header { margin: 0 auto; }
+      nav { text-align: center; }
+      li { list-style-type: none; }
+      a { text-decoration: none; }
+      /*샵샵샵*/
+      #logo {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          text-align: center;
+        }
+      #logo img {
+        width: 60px;
+      }
+      /*메인_gnb*/
+      #main_gnb {
+         clear: both;
+         width: 90%; margin: 0 auto;
+         border-top: 1px solid #ac36fe;
+         border-bottom: 1px solid #ac36fe;
+      }
+      #main_gnb > ul {
+        overflow: hidden;
+      }
+      #main_gnb > ul  li {
+        display: inline;
+        font-family: 'Scheherazade New', serif;
+        font-size: 18px;
+        padding: 10px 20px 10px 20px;
+        font-weight : 500;
+      }
+      #main_gnb > ul  li a {
+        color: #ac36fe;
+        transition: font-size 1.5s;
+      }
+      #main_gnb > ul  li a:hover {
+        color: #4F415B;
+        font-size: 22px;
+      }
+      /*섹션1*/
+      #section_01 {
+        width: 100%;
+        height: 650px;
+        margin: 0 auto;
+      }
+      section > div .goods_main {
+        position:absolute;
+      }
+      section > div .goods_main img{
+        padding: 0;
+        width: 320px;
+        transition:filter 0.5s;
+        filter: brightness(90%) drop-shadow(5px 5px 5px #d4cef4) ;
+      }
+      section > div .goods_main img:hover {
+        filter: brightness(100%) drop-shadow(5px 5px 5px #d4cef4) ;;
+      }
+      /*섹션2*/
+      #section_02 {
+        width: 100%;
+        height: 300px;
+        text-align: center;
+      }
+      #section_02 li {
+        clear: both;
+        display: inline;
+        margin: 0 10px 0 0;
+      }
+      #section_02 img {
+        width: 150px;
+        background: white
+      }
+      #section_02  table {
+        width: 100%;
+        margin: 0 auto;
+      }
+      #section_02  tr {
+        display: inline;
+        margin: 30px 10px 0 0px;
+      }
+      #section_02  tr th {
+        width: 150px;
+        color: #4F415B;
+        text-align: center;
+        font-family: 'Pretendard';
+        font-size: 16px;
+        font-weight: 300;
+      }
+      #section_02  tr th:hover {
+        font-size: 17px;
+        font-weight: 500;
+      }
+      .button {
+       margin-bottom: 100px;
+       text-align: center;
+     }
+      .button a {
+      font-family: 'Pretendard';
+      color: #ac36fe;
+      font-weight: 300;
+       border: solid 1px #ac36fe;
+       border-radius: 0%;
+       padding: 10px 30px 10px 30px;
+     }
+     .button a:hover {
+     color: #ac36fe;
+     font-weight: 500;
+      border: solid 2px #ac36fe;
+      border-radius: 50%;
+      padding: 10px 30px 10px 30px;
+    }
+      /*푸터*/
+      footer {
+        width: 100%;
+        height: 50px;
+      }
+      #footer_box {
+        width: 90%;
+        margin: 0 auto;
+        height: 50px;
+        border-top: 1px solid #ac36fe;
+      }
+      #footer_box P {
+        margin-top: 10px;
+        text-align: center;
+        font-family: 'Scheherazade New', serif;
+        color: #ac36fe;
+      }
+      /*etc*/
+      .clear {
+        clear: both;
+      }
+      .align-center1 {
+        margin: 0 auto;
+      }
+      .align-center2 {
+        text-align: center;
+      }
+      /*폰트*/
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&family=Scheherazade+New&display=swap');
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html"><img src="./img/logo.png"></a>
+      </div>
+      <nav id="main_gnb">
+        <ul>
+          <li><a href="sub01.html"><i>K</i>ING...</a></li>
+          <li><a href="sub02.html"><i>A</i>LBUM</a></li>
+          <li><a href="sub03.html"><i>V</i>IDEOS</a></li>
+          <li><a href="sub04.html"><i>G</i>OODS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="section_01">
+    <div class="container">
+      <div class="goods_main" style="top:320px; left:890px; z-index:9">
+        <img src="img/goods_hood1.png">
+      </div>
+      <div class="goods_main" style="top:180px; left:360px; z-index:2">
+        <img src="img/goods_key1.png">
+      </div>
+        <div class="goods_main" style="top:380px; left:590px; z-index:6">
+        <img src="img/goods_t1.png">
+        </div>
+        <div class="goods_main" style="top:160px; left:680px; z-index:4">
+        <img src="img/goods_sun1.png">
+        </div>
+        <div class="goods_main" style="top:420px; left:390px; z-index:5">
+        <img src="img/goods_lp1.png">
+        </div>
+      </div>
+      </section>
+      <div class="clear"></div>
+
+      <div class="align-center2">
+        <section id="section_02">
+          <ul >
+            <li><img src="img/goods_hood1.png" onmouseover="this.src='img/goods_hood2.png'" onmouseout="this.src='img/goods_hood1.png'"></li>
+            <li><img src="img/goods_key1.png" onmouseover="this.src='img/goods_key2.png'" onmouseout="this.src='img/goods_key1.png'"></li>
+            <li><img src="img/goods_t1.png" onmouseover="this.src='img/goods_t2.png'" onmouseout="this.src='img/goods_t1.png'"></li>
+            <li><img src="img/goods_sun1.png" onmouseover="this.src='img/goods_sun2.png'" onmouseout="this.src='img/goods_sun1.png'"></li>
+            <li><img src="img/goods_lp1.png" onmouseover="this.src='img/goods_lp2.png'" onmouseout="this.src='img/goods_lp1.png'"></li>
+          </ul>
+          <form>
+            <table>
+              <tr>
+                <th>ㄱㄴ Hoodie</th>
+              </tr>
+              <tr>
+                <th>Key-ring</th>
+              </tr>
+              <tr>
+                <th>Sunglasses</th>
+              </tr>
+              <tr>
+                <th>ㄱㄴ T-shirt</th>
+              </tr>
+              <tr>
+                <th>DaDa! Vinyl</th>
+              </tr>
+            </table>
+          </form>
+        </section>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="button">
+        <a href="https://search.musinsa.com/search/musinsa/integration?q=8BALLTOWN">MORE ></a>
+      </div>
+
+      <div class="clear"></div>
+      <footer>
+        <div id="footer_box">
+          <p>COPYRIGHT ⓒAYEON LEE ALL RIGHTS RESERVED</p>
+        </div>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>meenoi</title>
+    <style>
+      * { margin: 0; padding: 0; }
+      body {
+        background-image : url('img/main_bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        background-color: #d3d3d3;
+        background-blend-mode: normal;
+        background-attachment: fixed;
+       }
+      header { margin: 0 auto; }
+      nav { text-align: center; }
+      li { list-style-type: none; }
+      a { text-decoration: none; }
+      /*샵샵샵*/
+      #logo {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          text-align: center;
+        }
+      #logo img {
+        width: 60px;
+      }
+      /*메인_gnb*/
+      #main_gnb {
+         clear: both;
+         width: 90%; margin: 0 auto;
+         border-top: 1px solid #ac36fe;
+         border-bottom: 1px solid #ac36fe;
+      }
+      #main_gnb > ul {
+        overflow: hidden;
+      }
+      #main_gnb > ul  li {
+        display: inline;
+        font-family: 'Scheherazade New', serif;
+        font-size: 18px;
+        padding: 10px 20px 10px 20px;
+        font-weight : 500;
+      }
+      #main_gnb > ul  li a {
+        color: #ac36fe;
+        transition: font-size 1.5s;
+      }
+      #main_gnb > ul  li a:hover {
+        color: #4F415B;
+        font-size: 22px;
+      }
+      /*메인영상*/
+      #main_video {
+        attachment: fixed;
+        position: absolute;
+        top: 250px;
+        left: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: 360px;
+        z-index: -1;
+        overflow: hidden;
+      }
+      #main_video > video {
+        display: block;
+        margin: 0 auto;
+      }
+      /*가운데 글씨*/
+      .main_p {
+        position: absolute;,
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        margin-top: 240px;
+        font-size: 50px;
+        font-family: 'Scheherazade New', serif;
+        color: #ac36fe;
+      }
+      .main_p > p:hover {
+        color: #d3d3d3;
+      }
+      /*폰트*/
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&family=Scheherazade+New&display=swap');
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html"><img src="./img/logo.png"></a>
+      </div>
+      <nav id="main_gnb">
+        <ul>
+          <li><a href="sub01.html"><i>K</i>ING...</a></li>
+          <li><a href="sub02.html"><i>A</i>LBUM</a></li>
+          <li><a href="sub03.html"><i>V</i>IDEOS</a></li>
+          <li><a href="sub04.html"><i>G</i>OODS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main_p">
+      <p>meenoi</p>
+    </div>
+       <video id="main_video" muted autoplay loop>
+          <source src="img/main_mp4.mp4" type="video/mp4">
+       </video>
+  </body>
+</html>
